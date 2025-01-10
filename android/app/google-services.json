@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1088079610595",
+    "project_id": "video-downloader-d4d7b",
+    "storage_bucket": "video-downloader-d4d7b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1088079610595:android:118972b15aee9de7837bd6",
+        "android_client_info": {
+          "package_name": "com.example.draftdesk"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDa6X6c1pJDINKqiH0VOlodfjj1LDHvS8A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1088079610595:android:23149c2995c8b33d837bd6",
+        "android_client_info": {
+          "package_name": "com.infusiblecoder.techspr"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDa6X6c1pJDINKqiH0VOlodfjj1LDHvS8A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

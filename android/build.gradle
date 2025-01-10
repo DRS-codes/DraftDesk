@@ -1,0 +1,33 @@
+// Root build.gradle file
+
+plugins {
+  // ...
+
+  // Add the dependency for the Google services Gradle plugin
+  id 'com.google.gms.google-services' version '4.4.2' apply false
+
+}
+
+allprojects {
+    repositories {
+        google()         // Google's Maven repository
+        mavenCentral()   // Maven Central repository
+    }
+}
+
+// Define the build directory location for the root project and subprojects
+rootProject.buildDir = "../build"
+
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+
+// Set evaluation dependencies for subprojects
+subprojects {
+    project.evaluationDependsOn(":app")  // Ensures ":app" is evaluated before any other subproject
+}
+
+// Register a clean task that deletes the build directory of the root project
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}
